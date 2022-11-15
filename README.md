@@ -19,6 +19,12 @@ python3 v1.0.py
 
 配置好gcc环境变量可以全自动编译为exe
 
+> tips: 如果自己使用gcc编译的话记得加-s去掉符号信息
+>
+> ```shell
+> gcc shell.c -mwindows -o shell.exe -s
+> ```
+
 推荐使用[tcc](https://www.bellard.org/tcc/)替代gcc作为编译器，免杀效果更佳
 
 下图为tcc编译的查杀率，查杀率有点高，但是实测能过火绒、360、windows defender
